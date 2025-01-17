@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Ordered List Example</title>
+    <style>
+        /* General styling for the ordered list */
+        ol {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+            padding-left: 20px;
+        }
+
+        /* Style for list items */
+        ol li {
+            margin: 5px 0;
+            padding-left: 10px;
+        }
+
+        /* Styling for nested ordered lists */
+        ol ol {
+            font-size: 14px;
+            margin-left: 20px;
+            color: #555;
+        }
+
+        /* Styling for second-level nested lists */
+        ol ol ol {
+            font-size: 12px;
+            margin-left: 20px;
+            color: #777;
+        }
+
+        /* Add some color and bold the numbering for higher levels */
+        ol li:nth-child(odd) {
+            background-color: #f9f9f9;
+            padding: 5px;
+        }
+
+        ol li:nth-child(even) {
+            background-color: #e9e9e9;
+            padding: 5px;
+        }
+
+        /* Additional style for the list items to make them stand out */
+        ol ol li {
+            background-color: #e0f7fa;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Nested Ordered List Example</h2>
+
+<ol>
+    <li>Subject: Computer Science
+        <ol>
+            <li>Programming Languages
+                <ol>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                </ol>
+            </li>
+            <li>Web Development
+                <ol>
+                    <li>Frontend Development
+                        <ol>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ol>
+                    </li>
+                    <li>Backend Development
+                        <ol>
+                            <li>Node.js</li>
+                            <li>PHP</li>
+                            <li>Ruby on Rails</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>Operating Systems
+                <ol>
+                    <li>Linux</li>
+                    <li>Windows</li>
+                    <li>MacOS</li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+    <li>Subject: Mathematics
+        <ol>
+            <li>Algebra</li>
+            <li>Calculus
+                <ol>
+                    <li>Differential Calculus</li>
+                    <li>Integral Calculus</li>
+                </ol>
+            </li>
+            <li>Geometry</li>
+        </ol>
+    </li>
+    <li>Subject: Literature
+        <ol>
+            <li>Poetry</li>
+            <li>Prose</li>
+            <li>Drama</li>
+        </ol>
+    </li>
+</ol>
+
+</body>
+</html>
